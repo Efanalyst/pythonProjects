@@ -1,17 +1,19 @@
-print("entrance exam grades")
-max_possible_score = int(input("max possible score? "))
-course = input("input course: ")
-score = int(input("input score: "))
-percentage = round(score/max_possible_score * 100)
-if percentage >= 90 and percentage <= 100:
-  print(course+":" + "A+")
-elif percentage >= 80 and percentage <90:
-  print(course+":" + "A-")
-elif percentage >= 70 and percentage <80:
-  print(course+":" + "B")
-elif percentage >= 60 and percentage <70:
-  print(course+":" + "C")
-elif percentage >= 50 and percentage <60:
-  print(course+":" + "D")
-else: 
-  print(course+":" + "failed")
+n_e = "ok"
+while n_e == input("""EXAM GRADE CALCULATOR
+let's go:"""):
+   max_possible_score = int(input("max possible score? "))
+   course = input("input course: ")
+   score = int(input("input score: "))
+   percentage = round(score/max_possible_score * 100)
+   if percentage >= 90 and percentage <= 100:
+     print(course+":" + "A+")
+   elif percentage >= 80 and percentage <90:
+     print(course+":" + "A-")
+   elif percentage >= 70 and percentage <80:
+     print(course+":" + "B")
+   elif percentage >= 60 and percentage <70:
+     print(course+":" + "C")
+   elif percentage >= 50 and percentage <60:
+     print(course+":" + "D")
+   else: 
+     print(course+":" + "failed")
