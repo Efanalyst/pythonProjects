@@ -1,6 +1,6 @@
 n_e = "ok"
 while n_e == input("""EXAM GRADE CALCULATOR
-let's go:"""):
+type 'ok' to continue:"""):
    max_possible_score = int(input("max possible score? "))
    course = input("input course: ")
    score = int(input("input score: "))
